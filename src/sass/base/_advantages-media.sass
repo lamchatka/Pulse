@@ -1,0 +1,51 @@
+@media (max-width: 991px)
+    .advantages
+
+        &__title
+            font-size: 25px
+
+        &__icon-title
+            font-size: 16px
+
+        &__icon-descr
+            width: 244px
+            font-size: 13px
+
+@media (max-width: 767px)
+    .advantages
+        &__icons
+            margin-top: 30px
+            flex-wrap: wrap
+
+        &__icon
+            &:nth-child(1), &:nth-child(2)
+                padding-bottom: 20px
+
+            &:nth-child(3)
+                margin: 0 auto
+                padding-top: 20px
+
+                .advantages__icon-descr_width
+                    width: 304px
+
+                    br
+                        display: none
+
+@media (max-width: 575px)
+    .advantages
+        padding: 40px 0 40px 0
+        
+        &__title
+            font-size: 18px
+
+        &__icons
+            flex-wrap: nowrap
+            flex-direction: column
+            align-items: center
+
+        &__icon
+            &:nth-child(3)
+                margin: 0
+
+                .advantages__icon-descr_width
+                    width: 244px
